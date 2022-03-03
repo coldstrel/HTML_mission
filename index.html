@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pasteleria</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    </script>
+</head>
+
+<body>
+
+    <header>
+        Pasteleria
+        <img class="logo" src="resources/fb4d634da98c4eea5c30c0bb82f87231.jpg" style="float: left; height: 150px; width: 150px;">
+        <a style="top: 0px; right: 0px; position: absolute; line-height:50px" href="pastelero.html">Ingresar</a>
+    </header>
+
+    <section>
+        <p>La mejor pasteleria de la zona con los precios mas accesibles, perfectos para cualquier paladar.</p> <br/>
+        <p style="font-size:20px; font-weight:bold; text-decoration: underline;">Sabores de pasteles</p>
+    </section>
+    <!-- Seccion de los sabores -->
+    <div class="sabores">
+        <div class="chocolate ">
+            <h4>Chocolate</h4>
+            <img src="resources/chocolate.jpg " style="float: center; height: 200px; width: 200px; ">
+            <div class="overlay_choc">
+                <p class="precio_chocolate">El precio del pastel de chocolate es de $100.00</p>
+            </div>
+        </div>
+        <div class="vainilla ">
+            <h4>Vainilla</h4>
+            <img src="resources/vainilla.jpg " style="float: center; height: 200px; width: 200px; ">
+            <div class="overlay_vain">
+                <p class="precio_chocolate">El precio del pastel de vainilla es de $150.00</p>
+            </div>
+        </div>
+        <div class="tequila ">
+            <h4>Tequila</h4>
+            <img src="resources/pastel_tequila.jpg " style="float: center; height: 200px; width: 200px; ">
+            <div class="overlay_teq">
+                <p class="precio_chocolate">El precio del pastel de tequila es de $500.00</p>
+            </div>
+        </div>
+        <div class="tres_leches ">
+            <h4>Tres Leches</h4>
+            <img src="resources/tres_leches.jpg " style="float: center; height: 200px; width: 200px; ">
+            <div class="overlay_tres">
+                <p class="precio_chocolate">El precio del pastel de tres leches es de $60.00</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Seccion de los adornos -->
+    <p style="font-size:20px; font-weight:bold; text-decoration: underline;">Adornos disponibles para pasteles</p>
+    <div class="adornos">
+        <div class="emoji">
+            <h4>Adorno de Emoji Variado</h4>
+            <img src="resources/adorno_emoji.jpg " style="float: center; height: 200px; width: 200px; ">
+            <div class="overlay_emoji">
+                <p class="precio_emoji">Puedes elejir el emoji que gustes, nosotros lo realizamos de galleta. El costo por este adorno es de: $50.00
+                </p>
+            </div>
+        </div>
+        <div class="cumpleanos">
+            <h4>Adorno para cumpleaños</h4>
+            <img src="resources/adorno_cumpleanos.jpg " style="float: center; height: 200px; width: 200px; ">
+            <div class="overlay_cumpleanos">
+                <p class="precio_cumpleanos">Puedes elejir el modelo de globos o con un mensaje en el pastel. El costo por este adorno es de: $100.00 o $50.00
+                </p>
+            </div>
+        </div>
+        <div class="cartoon">
+            <h4>Adorno de dibujos animados</h4>
+            <img src="resources/adorno_cartoon.jpg " style="float: center; height: 200px; width: 200px; ">
+            <div class="overlay_cartoon">
+                <p class="precio_cartoon">Tenemos una variedad de dibujos animados disponibles, pregunta por el que mas te guste, esta hecho a base de caramelo. El costo por este adorno es de: $200.00
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Arma tu propio pastel -->
+    <br>
+    <p style="font-size:20px; font-weight:bold; text-decoration: underline;">Arma tu propio pastel</p>
+    <div class="armar">
+        <div class="elegir_sabor">
+            Elige un sabor de pastel <br> Puedes combinar los sabores si asi lo deseas
+            <br><br>
+            <form id="sabor-elegir">
+                <input type="checkbox" id="chocolate" name="pastel_chocolate" value="sabor_chocolate">
+                <label for="chocolate">Sabor chocolate</label><br>
+                <input type="checkbox" id="vainilla" name="pastel_vainilla" value="sabor_vainilla">
+                <label for="chocolate">Sabor vainilla</label><br>
+                <input type="checkbox" id="tequila" name="pastel_tequila" value="sabor_tequila">
+                <label for="chocolate">Sabor tequila</label><br>
+                <input type="checkbox" id="tres" name="pastel_tres" value="sabor_tres">
+                <label for="chocolate">Sabor tres leches</label><br>
+            </form>
+        </div>
+
+        <div class="elegir_adorno">
+            Elige un adorno de acuerdo a tu preferencia <br> Es posible combinar los adornos que quieras
+            <br><br>
+            <form id="adornos-elegir">
+                <input type="checkbox" id="emoji" name="adorno_emoji" value="adorno_emoji">
+                <label for="chocolate">Adorno emoji</label><br>
+                <input type="checkbox" id="cumpleanos" name="adorno_cumpleanos" value="adorno_cumpleanos">
+                <label for="chocolate">Adorno cumpleaños</label><br>
+                <input type="checkbox" id="dibujos" name="adorno_dibujos" value="adorno_dibujos">
+                <label for="chocolate">Adorno Dibujos animados</label><br>
+            </form>
+        </div>
+    </div>
+
+    <!-- Datos de contacto para el pastel -->
+    <br><br><br>
+    <div class="datos-personales">
+        <h3>Ingresa tus datos de contacto para hacerte el envio del pastel</h3>
+        <form id="datos-envio">
+            <label for="nombre">Ingresa tu nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="nombre">Ingresa tus apellidos:</label><br>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="nombre">Ingresa tu correo:</label><br>
+            <input type="mail" id="mail" name="mail"><br>
+            <label for="nombre">Ingresa tu numero de telefono:</label><br>
+            <input type="tel" id="celular" name="celular" maxlength="10"><br>
+            <label for="descripcion">Agrega una descripcion mas general para tu pedido</label><br>
+            <textarea rows="5" cols="50" id="descripcion" name="descripcion-general"></textarea>
+        </form>
+    </div>
+
+    <!-- Boton para pedido -->
+    <div class="boton-envio">
+        <button id="btn">
+            <p id="btnText">Hacer pedido</p>
+            <div class="check-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+        </button>
+    </div>
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn");
+        const btnText = document.querySelector("#btnText");
+
+        btn.onclick = () => {
+            btnText.innerHTML = "Gracias";
+            btn.classList.add("active");
+
+            document.getElementById("datos-envio").reset();
+            document.getElementById("sabor-elegir").reset();
+            document.getElementById("adornos-elegir").reset();
+
+            window.setTimeout(function() {
+                location.reload()
+            }, 3000)
+
+
+        };
+    </script>
+
+    <br><br>
+    <footer>
+        Pasteleria "pasteleria" todos los derechos reservados.<br> Tel de contacto: 1234567890<br> Horarios de atencion: <br> Todos los dias de 8:00 am a 6:00<br> Contamos con envio a domicilio <br>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    background-color: black;
+    font-family: Corbel;
+}
+
+.inventario {
+    display: table;
+    width: 100%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+table {
+    border: 1px solid black;
+    float: left;
+    margin: auto;
+    width: 45%;
+}
+
+th,
+td {
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0;
+}
+
+.info-pedidos {
+    display: table;
+    width: 100%;
+    border: 1px solid black;
+    margin: auto;
+}

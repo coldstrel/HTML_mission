@@ -1,0 +1,192 @@
+header {
+    line-height: 150px;
+    font-family: Palatino Linotype;
+    font-weight: bold;
+    font-size: 50px;
+    height: 150px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    display: table;
+    width: 100%;
+}
+
+* {
+    font-family: Sitka Text;
+    font-size: 16px;
+}
+
+.chocolate,
+.vainilla,
+.tequila,
+.tres_leches {
+    float: left;
+    width: 25%
+}
+
+.sabores {
+    width: 90%;
+    margin: auto;
+}
+
+.sabores:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.overlay_choc,
+.overlay_teq,
+.overlay_tres,
+.overlay_vain {
+    position: sticky;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00bffff1;
+}
+
+.chocolate img,
+.vainilla img,
+.tequila img,
+.tres_leches img {
+    position: absolute;
+}
+
+.chocolate:hover .overlay_choc,
+.vainilla:hover .overlay_vain,
+.tequila:hover .overlay_teq,
+.tres_leches:hover .overlay_tres {
+    opacity: 1;
+}
+
+.adornos {
+    width: 90%;
+    margin: auto;
+}
+
+.emoji,
+.cumpleanos,
+.cartoon {
+    float: left;
+    width: 33%
+}
+
+.overlay_emoji,
+.overlay_cumpleanos,
+.overlay_cartoon {
+    position: sticky;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00bffff1;
+}
+
+.emoji img,
+.cumpleanos img,
+.cartoon img,
+.tres_leches img {
+    position: absolute;
+}
+
+.adornos:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.emoji:hover .overlay_emoji,
+.cartoon:hover .overlay_cartoon,
+.cumpleanos:hover .overlay_cumpleanos {
+    opacity: 1;
+}
+
+.armar {
+    width: 80%;
+    margin: auto;
+    display: table;
+}
+
+.elegir_sabor,
+.elegir_adorno {
+    float: left;
+    width: 50%;
+}
+
+.datos-personales {
+    width: 100%;
+    margin: auto;
+    display: table;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(75, 133, 227);
+    color: white;
+    height: fit-content;
+}
+
+button {
+    width: 270px;
+    height: fit-content;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.check-box {
+    width: 80px;
+    height: fit-content;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+
+.check-box svg {
+    width: 40px;
+    margin: 4px;
+}
+
+svg path {
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active {
+    background: #ff2b75;
+    transition: 1s;
+}
+
+.active .check-box {
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p {
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.active svg path {
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
