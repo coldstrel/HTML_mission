@@ -2,5 +2,5 @@
 
 Link hacia la pagina del proyecto:
 
-[title](https://coldstrel.github.io/HTML_mission/index.html)
+[Pasteleria](https://coldstrel.github.io/HTML_mission/index.html)
 
